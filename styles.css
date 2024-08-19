@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.toolbar {
+    background-color: #333; /* Dark grey background for toolbar */
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+}
+
+input[type="color"], input[type="range"] {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+canvas {
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: crosshair;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 90%;
+    height: 70%;
+}
+
+@media (min-width: 768px) {
+    canvas {
+        width: 70%;
+        height: 80%;
+    }
+}
